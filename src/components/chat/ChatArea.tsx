@@ -125,7 +125,7 @@ export default function ChatArea({ roomId }: ChatAreaProps) {
     }
   };
 
-  const handleSendMessage = (e: React.FormEvent) => {
+  const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newMessage.trim() || !user) return;
 
