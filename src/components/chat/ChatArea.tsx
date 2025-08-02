@@ -227,7 +227,7 @@ export default function ChatArea({ roomId }: ChatAreaProps) {
     setEditContent(message.content);
   };
 
-  const handleStartGame = (gameType: 'chess' | 'tic-tac-toe') => {
+  const handleStartGame = async (gameType: 'chess' | 'tic-tac-toe') => {
     if (!user) return;
 
     try {
